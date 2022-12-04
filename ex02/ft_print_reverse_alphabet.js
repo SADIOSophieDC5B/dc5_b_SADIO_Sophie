@@ -1,6 +1,6 @@
 let alphabet = '';
 
-for (let i = 0; i < 26; i++) {
+for (let i = 25; i > -1; i--) {
     alphabet += String.fromCharCode(i + 65);
 }
 

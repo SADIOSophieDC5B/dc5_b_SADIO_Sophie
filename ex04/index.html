@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+        <!-- un élément HTML qui servira à afficher le résultat -->
+        <div id="resultat"></div>
+
+        <!-- un bouton HTML qui appelle la fonction afficherSigne() lorsqu'on clique dessus -->
+        <button onclick="afficherSigne()">Afficher le résultat</button>
+
+        <!-- définition de la fonction afficherSigne() -->
+        <script>
+        function afficherSigne() {
+          // demander un chiffre à l'utilisateur et le stocker dans une variable n
+          let n = prompt("Veuillez entrer un chiffre :");
+
+          // convertir la valeur entrée en un nombre
+          n = Number(n);
+
+          // vérifier si n est positif, négatif ou nul et afficher le résultat dans un élément HTML avec l'id "resultat"
+          if (n < 0) {
+            document.getElementById("resultat").innerHTML = "N";
+          } else {
+            document.getElementById("resultat").innerHTML = "P";
+          }
+        }
+        </script>
+
+
+
+  </body>
+</html>
